@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+      font-family: "Geist", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+        display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #919191;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    width: 200px;
+}
+
+ul li a:hover .highligh{
+    width: 20px;
+}
+
+a span{
+    display: inline-flex;
+}
+
+.count{
+    transition: all 0.25s ease;
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.highligh{
+    width: 8px;
+    height: 1px;
+    background-color: #919191;
+    will-change: width ;
+    transition: all 0.25s ease;
+}
+
+.listItem .text {
+transition: color 0.25s ease;
+}
+
+.listItem .highligh {
+transition: width 0.25s ease, background-color 0.25s ease;
+}
+
+.listItem.active .highligh {
+width: 15px;
+background-color: #fff;
+}
+
+.listItem.active .count{
+    color: #fff;
+}
+
+.listItem.active .text {
+color: #fff;
+}
